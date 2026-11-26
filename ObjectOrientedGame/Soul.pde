@@ -6,11 +6,14 @@ class Soul {
   boolean up = false;
   boolean down = false;
   
+  PImage player; 
+  
   //Constructor for Soul Object 
   Soul(PVector tempPos) { 
     ellipseMode(CENTER); 
+    imageMode(CENTER);
     position = tempPos;
-    
+    player = loadImage("playerSoul.png");
     
   }
   
@@ -46,7 +49,7 @@ class Soul {
   
   void displaySoul() {
     fill(255,0,0);
-    ellipse(position.x,position.y,20,20);
+    image(player,position.x,position.y,20,20);
     move();
     
   }
