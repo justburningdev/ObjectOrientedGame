@@ -9,7 +9,7 @@ Soul soul;
 
 void setup() {
 size(400,400);  
-background(0);
+
 ellipseMode(CENTER);    
 soul = new Soul(new PVector(200,300));
   
@@ -18,7 +18,10 @@ soul = new Soul(new PVector(200,300));
 
 
 void draw() {
+  background(0);
   
+  
+  soul.displaySoul();
   
   
   
@@ -29,7 +32,52 @@ void draw() {
 void keyPressed() {
   
   if (key == 'W' || key == 'w') {
+    soul.up = true;
     
+  }
+  
+  
+   if (key == 'S' || key == 's') {
+    soul.down = true;
+    
+  }
+  
+  
+   if (key == 'D' || key == 'd') {
+    soul.right = true;
+    
+  }
+  
+  
+  
+   if (key == 'A' || key == 'a') {
+    soul.left = true;
+    
+  }
+  
+}
+
+
+void keyReleased() {
+  
+   if (key == 'W' || key == 'w') {
+    soul.up = false;
+   }
+  
+  
+  if (key == 'S' || key == 's') {
+    soul.down = false;
+  }
+  
+  
+   if (key == 'D' || key == 'd') {
+    soul.right = false;
+    
+  }
+  
+  
+   if (key == 'A' || key == 'a') {
+    soul.left = false;
     
   }
   
