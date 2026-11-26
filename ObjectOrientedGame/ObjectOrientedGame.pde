@@ -1,5 +1,8 @@
 //Object Oriented Game Start
 
+import processing.sound.*;
+SoundFile file; 
+
 boolean startScreen = true;
 boolean endScreen = false;
 boolean playing = false;
@@ -12,7 +15,8 @@ size(400,400);
 
 ellipseMode(CENTER);    
 soul = new Soul(new PVector(200,300));
-  
+file = new SoundFile(this,"black knife.mp3"); 
+file.play();
 }
 
 
