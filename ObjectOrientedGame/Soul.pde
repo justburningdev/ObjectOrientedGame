@@ -21,24 +21,24 @@ class Soul {
   void move() {
     
     if (up == true) {
-      position.y  = position.y - 2;
+      position.y  = position.y - 4;
       
     }
     
     
     if (down == true) {
-       position.y  = position.y + 2;
+       position.y  = position.y + 4;
       
     }
     
     if (left == true) {
-       position.x  = position.x - 2;
+       position.x  = position.x - 4;
       
     }
     
     
     if (right == true) {
-       position.x  = position.x + 2;
+       position.x  = position.x + 4;
       
     }
     

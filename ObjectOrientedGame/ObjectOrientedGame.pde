@@ -10,13 +10,16 @@ boolean gameOver = false;
 
 Soul soul;
 
+Knight knight; 
+
 void setup() {
 size(400,400);  
 
 ellipseMode(CENTER);    
 soul = new Soul(new PVector(200,300));
-file = new SoundFile(this,"black knife.mp3"); 
-file.play();
+knight = new Knight(new PVector(100,100));
+//file = new SoundFile(this,"black knife.mp3"); 
+//file.play();
 }
 
 
